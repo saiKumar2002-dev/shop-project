@@ -1,66 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Shop Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Shop - Online Shopping Store</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>My Shop</h1>
-    <p>Online Shopping Store</p>
-</header>
+    <!-- Header -->
+    <header>
+        <h1>🛒 My Shop</h1>
+        <p>Online Shopping Store</p>
+    </header>
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#products">Products</a>
-    <a href="#contact">Contact</a>
-</nav>
 
-<section class="hero">
-    <h2>Welcome to My Shop</h2>
-    <p>Quality products at affordable prices</p>
-</section>
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#cart">Cart</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-<section id="products" class="products">
 
-    <div class="product">
-        <h3>Wireless Headphones</h3>
-        <p>₹1,499</p>
-        <button onclick="addToCart('Wireless Headphones')">
-            Add to Cart
-        </button>
-    </div>
+    <!-- Welcome -->
+    <section class="hero">
+        <h2>Welcome to My Shop</h2>
+        <p>Quality products at affordable prices</p>
+    </section>
 
-    <div class="product">
-        <h3>Smart Watch</h3>
-        <p>₹2,499</p>
-        <button onclick="addToCart('Smart Watch')">
-            Add to Cart
-        </button>
-    </div>
 
-    <div class="product">
-        <h3>Bluetooth Speaker</h3>
-        <p>₹999</p>
-        <button onclick="addToCart('Bluetooth Speaker')">
-            Add to Cart
-        </button>
-    </div>
+    <!-- Products -->
+    <section id="products">
 
-</section>
+        <h2>Our Products</h2>
 
-<section class="cart">
-    <h2>Shopping Cart</h2>
-    <p id="cartMessage">Your cart is empty.</p>
-</section>
+        <div class="products">
 
-<footer id="contact">
-    <p>© 2026 My Shop | AWS DevOps Project</p>
-</footer>
 
-<script src="app.js"></script>
+            <!-- Headphones -->
+            <div class="product">
+
+                <img
+                    src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80"
+                    alt="Wireless Headphones"
+                >
+
+                <h3>Wireless Headphones</h3>
+
+                <p>₹1,499</p>
+
+                <button onclick="addToCart('Wireless Headphones')">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- Smart Watch -->
+            <div class="product">
+
+                <img
+                    src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=500&q=80"
+                    alt="Smart Watch"
+                >
+
+                <h3>Smart Watch</h3>
+
+                <p>₹2,499</p>
+
+                <button onclick="addToCart('Smart Watch')">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- Speaker -->
+            <div class="product">
+
+                <img
+                    src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=500&q=80"
+                    alt="Bluetooth Speaker"
+                >
+
+                <h3>Bluetooth Speaker</h3>
+
+                <p>₹999</p>
+
+                <button onclick="addToCart('Bluetooth Speaker')">
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Shopping Cart -->
+    <section id="cart" class="cart">
+
+        <h2>🛒 Shopping Cart</h2>
+
+        <p id="cartMessage">
+            Your cart is empty.
+        </p>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Email: support@myshop.com</p>
+
+        <p>Phone: +91 98765 43210</p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 My Shop | AWS DevOps Project
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
 
 </body>
+
 </html>
